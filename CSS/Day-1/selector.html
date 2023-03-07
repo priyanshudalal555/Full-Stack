@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector in CSS</title>
+    <style>
+        /* Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Invididual Selector */
+        p{
+            color: cadetblue;
+        }
+        /* Class and Id Selector */
+        .blue{
+            color: darkblue;
+        }
+        #ktm{
+            color: coral;
+        }
+        #royal{
+            color: cornflowerblue;
+        }
+        /* And Selector Selector */
+        li.xl{
+            font-size: larger;
+        }
+        /* Combined Selector */
+        .blue, #royal{
+            font-weight: 600;
+        }
+        /* Inside an Element Selector */ 
+        ul a{
+            color: red;
+        }
+        /* Direct Child Selector*/
+        ul>span{
+            color: aqua;
+        }
+
+        /* ~/+ Selector */
+        li+#ktm{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style> 
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, debitis? Inventore provident nisi reprehenderit ad repudiandae saepe asperiores? Sunt harum sequi, officiis unde possimus dolore culpa molestias facere, eum sint reiciendis! Voluptas minus aut nostrum eum beatae voluptate minima amet eaque aperiam perspiciatis. Temporibus laboriosam explicabo ut culpa quo vero?</p>
+    <ul>
+        <a href="#">wikihow</a>
+        <li class="blue xl">youtube</li>
+        <li id="ktm">Facebook</li>
+        <li id="royal">Twitter</li>
+        <li class="blue">LinkedIn</li>
+        <li class="blue">Instagram</li>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorum architecto pariatur.</span>
+    </ul>
+</body>
+</html>

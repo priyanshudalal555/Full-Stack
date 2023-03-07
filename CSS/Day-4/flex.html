@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container2{
+            display: flex;
+        }
+        .container3{
+            display: flex;
+            flex-direction: row;
+        }
+        .container4{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .container5{
+            display: flex;
+            flex-direction: column;
+        }
+        .container6{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .container7{
+            display: flex;
+            justify-content: flex-start;
+        }
+        .container8{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .container9{
+            display: flex;
+            justify-content: center;
+        }
+        .container10{
+            display: flex;
+            justify-content: space-between;
+        }
+        .container11{
+            display: flex;
+            justify-content: space-around;
+        }
+        .container12{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .box,.boxy{
+            border: 2px solid black;
+            background-color: yellow;
+            height: 50px;
+            width: 50px;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Without Flex:</h1>
+    <div class="container1">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+    </div>
+
+    <h1>With Flex:</h1>
+    <div class="container2">
+        <div class="boxy">Box1</div>
+        <div class="boxy">Box2</div>
+        <div class="boxy">Box3</div>
+        <div class="boxy">Box4</div>
+    </div>
+
+    <h1>With Flex and Flex-Direction=Row:</h1>
+    <div class="container3">
+        <div class="boxy">Box1</div>
+        <div class="boxy">Box2</div>
+        <div class="boxy">Box3</div>
+        <div class="boxy">Box4</div>
+    </div>    
+    
+    <h1>With Flex and Flex-Direction=Row-reverse:</h1>
+    <div class="container4">
+        <div class="boxy">Box1</div>
+        <div class="boxy">Box2</div>
+        <div class="boxy">Box3</div>
+        <div class="boxy">Box4</div>
+    </div>    
+    
+    <h1>With Flex  and Flex-Direction=Col:</h1>
+    <div class="container5">
+        <div class="boxy">Box1</div>
+        <div class="boxy">Box2</div>
+        <div class="boxy">Box3</div>
+        <div class="boxy">Box4</div>
+    </div>    
+    
+    <h1>With Flex and Flex-Direction=Col-reverse:</h1>
+    <div class="container6">
+        <div class="boxy">Box1</div>
+        <div class="boxy">Box2</div>
+        <div class="boxy">Box3</div>
+        <div class="boxy">Box4</div>
+    </div>
+
+    <h1>With Flex and justify-content = flex-start</h1>
+    <div class="container7">
+        <div class="boxy">Box1</div>
+        <div class="boxy">Box2</div>
+        <div class="boxy">Box3</div>
+        <div class="boxy">Box4</div>
+    </div>
+
+    <h1>With Flex and justify-content = flex-end</h1>
+    <div class="container8">
+        <div class="boxy">Box1</div>
+        <div class="boxy">Box2</div>
+        <div class="boxy">Box3</div>
+        <div class="boxy">Box4</div>
+    </div>
+
+    <h1>With Flex and justify-content = center</h1>
+    <div class="container9">
+        <div class="boxy">Box1</div>
+        <div class="boxy">Box2</div>
+        <div class="boxy">Box3</div>
+        <div class="boxy">Box4</div>
+    </div>
+
+    <h1>With Flex and justify-content = space-between</h1>
+    <div class="container10">
+        <div class="boxy">Box1</div>
+        <div class="boxy">Box2</div>
+        <div class="boxy">Box3</div>
+        <div class="boxy">Box4</div>
+    </div>
+
+    <h1>With Flex and justify-content = space-around</h1>
+    <div class="container11">
+        <div class="boxy">Box1</div>
+        <div class="boxy">Box2</div>
+        <div class="boxy">Box3</div>
+        <div class="boxy">Box4</div>
+    </div>
+
+    <h1>With Flex and justify-content = space-evenly</h1>
+    <div class="container12">
+        <div class="boxy">Box1</div>
+        <div class="boxy">Box2</div>
+        <div class="boxy">Box3</div>
+        <div class="boxy">Box4</div>
+    </div>
+</body>
+</html>

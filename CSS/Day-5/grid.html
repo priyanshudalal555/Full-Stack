@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .body{
+            background-color: aqua;
+        }
+        .container{
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.724);
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 10px;
+        }
+        .container2{
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.724);
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            row-gap: 10px;
+        }
+        .container3{
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.724);
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);  
+        }
+        .container4{
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.724);
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .box{
+            background-color: blueviolet;
+            margin: 10px;
+        }
+        .box1{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .box11{
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Template Column</h1>
+    <container class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </container>
+
+    <h1>Grid Template Row</h1>
+    <container class="container2">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </container>
+
+    <h1>Grid Column Start End</h1>
+    <container class="container3">
+        <div class="box box1"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </container>
+    
+    <h1>Grid Row Start End</h1>
+    <container class="container4">
+        <div class="box box11"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </container>
+</body>
+</html>

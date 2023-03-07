@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .leftsection{
+            background: url("images/stethoscope.png");
+        }
+        nav img{
+            height: 8vh;
+        }
+        nav li{
+            list-style: none;
+        }
+        nav li:hover{
+            font-style: italic;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        nav ul{
+            display: flex;
+            gap: 10px;
+        }
+        main{
+            display: flex;
+        }
+        h1{
+            font-size: 9vh;
+            width: 40vw;
+        }
+        p{
+            width: 50vw;
+        }
+        .bottomangle, .mouse{
+            float: right;
+        }
+        button{
+            background-color: darkseagreen;
+            color: white;
+            border-radius: 20px;
+            border: 0px;
+            height: 5vh;
+        }
+        .mouse{
+            margin-top: 50px;
+            margin-right: 60px;
+        }
+        .rightsection{
+            position: relative;
+        }
+        .greenbox{
+            position: absolute;
+            height: 80vh;
+            z-index: -3;
+        }
+        .yellowbox{
+            position: absolute;
+            height: 60vh;
+            z-index: -2;
+            margin-top: 10vh;
+            margin-left: 11vw;
+        }
+        .doctor{
+            position: absolute;
+            height: 85vh;
+            z-index: -1;
+            margin-top: 10vh;
+            margin-left: 10vw;   
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <img src="./images/logo.png" />
+        <ul>
+            <li>HOME</li>
+            <li>About Us</li>
+            <li>Our Services</li>
+            <li>Contact Us</li>
+        </ul>
+    </nav>
+    <!-- Main Section -->
+    <main>
+        <!-- Left Section -->
+        <section class="leftsection">
+            <img  class="topangle" src="./images/topAngle.png" alt="">
+            <h1>Complete Health Care Solutions for Everyone</h1>
+            <p>We're always available for our Patients with emergen problems. You can easily reach us 24/7. We focused on highest
+            quality.</p>
+            <img class="bottomangle" src="./images/bottomAngle.png" alt="">
+            <button>Make Appointment</button>
+            <img class="mouse" src="./images/mouse.png" alt="">
+            <img src="" alt="">
+        </section>  
+        <!-- Right Section  -->
+        <section class="rightsection">
+            <img class="greenbox" src="./images/greenBox.png" alt="">
+            <img class="yellowbox" src="./images/yellowBox.png" alt="">
+            <img class="doctor" src="./images/doctor.png" alt="">
+        </section>
+    </main>
+</body>
+</html>

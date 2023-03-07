@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes in CSS</title>
+    <style>
+        a{
+            color: brown;
+        }
+        a:hover{
+            background-color: green;
+            color: white;
+        }
+        a:visited{
+            background-color: chartreuse;
+            color: darkgoldenrod;
+        }
+        input:focus{
+            background-color: darkmagenta;
+            color: white;
+        }
+        li:nth-child(even){
+            background-color: darkslateblue;
+        }
+        li:nth-child(odd){
+            background-color: tomato;
+        }
+        .litem:nth-child(2n){
+            background-color: gold;
+        }
+        .litem3:first-child{
+            background-color: indianred;
+        }
+        .litem3:last-child{
+            background-color: palegreen;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Blank Link</a>
+    Name: <input type="text" name="" id="">
+    <ul>
+        <li>This is List Item</li>
+        <li>This is List Item</li>
+        <li>This is List Item</li>
+        <li>This is List Item</li>
+        <li>This is List Item</li>
+        <li>This is List Item</li>
+        <li>This is List Item</li>
+        <li>This is List Item</li>
+        <li>This is List Item</li>
+        <li>This is List Item</li>
+    </ul>
+    <ul>
+        <li class="litem">This is Another List Item</li>
+        <li class="litem">This is Another List Item</li>
+        <li class="litem">This is Another List Item</li>
+        <li class="litem">This is Another List Item</li>
+        <li class="litem">This is Another List Item</li>
+    </ul>
+
+    <ul>
+        <li class="litem3">This is Third list item</li>
+        <li class="litem3">This is Third list item</li>
+        <li class="litem3">This is Third list item</li>
+        <li class="litem3">This is Third list item</li>
+        <li class="litem3">This is Third list item</li>
+        <li class="litem3">This is Third list item</li>
+    </ul>
+</body>
+</html>
