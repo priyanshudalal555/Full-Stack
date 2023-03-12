@@ -28,8 +28,13 @@ console.log(square(99));
 function arrayPush(ara){
     return ara.push(6);
 }
+
 let ary=[1,2,3,4,5];
 arrayPush(ary);
 console.log(ary);
 
-//
+//Arrow Functions
+let jaimini = (var1,var2) => {
+    console.log(var1, var2);
+}
+jaimini(100, 50);
