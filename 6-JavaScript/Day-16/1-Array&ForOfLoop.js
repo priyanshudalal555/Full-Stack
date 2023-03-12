@@ -78,3 +78,18 @@ console.log(ar7.sort());
 
 //unshift()
 let ar8=[9,8,7,6,5,4,3,2,1];
+ar8.unshift(10,11);
+console.log(ar8);
+
+//split() -String to Array
+let qna='what is qna?';
+console.log(qna.split(' '));
+
+//for of
+let fruits =['Banana','Apple','Orange','Strawberry'];
+let FRUITS = [];
+for (const fname of fruits){
+    FRUITS.push(fname.toUpperCase());
+}
+console.log(FRUITS);
+
