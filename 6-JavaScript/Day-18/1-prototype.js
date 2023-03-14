@@ -10,3 +10,18 @@ let heropower={
     }
 }
 
+//Maing Prototype
+const TeachingSupport = {
+    isAvilable: false
+}
+
+const Assignments = {
+    fullTime: true,
+    __proto__: TeachingSupport
+}
+
+//Other way of prototype
+// TeachingSupport.__proto__ = Assignments
+
+//Modern way of prototype
+Object.setPrototypeOf(TeachingSupport, Assignments)
