@@ -20,3 +20,13 @@ const power ={
 const objct = Object.create(power)
 console.log(objct);
 console.log(objct.fly);
+
+//Define Property
+const obj4=Object.create({})
+Object.defineProperty(obj4, 'book', {
+    get: () => 'Rs Agarwall',
+    enumerable: true
+})
+for(k in obj4){
+    console.log(k);
+}
