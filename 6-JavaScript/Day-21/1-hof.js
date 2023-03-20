@@ -23,18 +23,39 @@ arr.forEach((val) =>{
 
 //Set Time Out
 
-//1.
-setTimeout(() => {
-    console.log("GOAT");
-}, 4000);
+// //1.
+// setTimeout(() => {
+//     console.log("GOAT");
+// }, 4000);
 
-//2.
-function sd(){
-    console.log("Shiva");
-}
-setTimeout(sd, 1000);
+// //2.
+// function sd(){
+//     console.log("Shiva");
+// }
+// setTimeout(sd, 1000);
 
 //Set Interval
-setInterval(() => {
-    console.log("|");
-}, 1000);
+// setInterval(() => {
+//     console.log("|");
+// }, 1000);
+
+//Map
+const nums = [5,6,7,8,9];
+const numsquare = nums.map((num)=> num*num);
+console.log(numsquare);
+
+//Filter
+const country = ["Bharat","Paistan","Nepal","Bhutan","Sri Lana","Bangladeesh","Myanmar"];
+const cl = country.filter((val) => val.includes("Bh"));
+console.log(cl);
+
+//Sort and Reverse Sort
+const country2 = ["Bharat","Paistan","Nepal","Bhutan","Sri Lana","Bangladeesh","Myanmar","Ireland","Australia"];
+console.log(country2.sort());
+console.log(country2.reverse()); 
+
+
+//Destructuring, Spread, and Rest
+const sci = [2.72, 3.14, 9.81, 37, 100];
+let[e, pi, grav, bodytemp, boiltemp] = sci;
+console.log(e, pi, grav, bodytemp, boiltemp);
