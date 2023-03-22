@@ -84,6 +84,6 @@ try{
 }catch (err) {
     console.log(err.name, "Last Name Empty");
 }finally{
-    console.log("Run at any cost");
+    console.log("Run at any given cost");
 }
 
