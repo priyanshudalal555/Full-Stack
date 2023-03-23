@@ -87,3 +87,8 @@ try{
     console.log("Run at any given cost");
 }
 
+// setInterval 
+setInterval(() => {
+    console.log("Refresh");
+}, 1000);
+
