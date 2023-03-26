@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>React CDN</title>
+    <style>
+        .robin{
+            color: purple;
+        }
+    </style>
 </head>
 <body>
     <div class="root">Not Rendering</div>    
@@ -22,13 +27,13 @@
         );
 
         const cia = (
-            <div>
+            <div style={{color: "green"}}>
                 <h1>C.I.A</h1>
                 <p>Central Investigation Agency.</p>
             </div>
         );
         const app = (
-            <div>
+            <div className="robin">
             {element} {cia}
             </div>
         );
