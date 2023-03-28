@@ -27,12 +27,26 @@
                 </div>
             )
         }
-        // const app = (
-        //     <>
-        //     {<Counter />}
-        //     </>
-        // );
-        ReactDOM.render(<Counter />, rootElement);
+
+        function SuperHeros(){
+        const [hero, setHeros] = useState(["IronMan","Thor","Captain"])
+        return(
+            <div>
+            <ul>
+                {hero.map((h) => (
+                <li>{h}</li>
+                ))}
+            </ul>
+            </div>
+        )
+        }
+        const app = (
+            <>
+            <Counter />
+            <SuperHeros />
+            </>
+        );
+        ReactDOM.render(app, rootElement);
     </script> 
 </body>
 </html>
